@@ -1,0 +1,145 @@
+# ─────────────────────────────────────────────────────────────
+# Consilium / PAL Jay — demo knowledge base (static & configurable)
+#
+# Edit this file to change what the AI knows. No code changes needed.
+# IMPORTANT: prices, discounts, availability and policies are intentionally
+# left as "confirm with the showroom" so the AI never hallucinates figures.
+# Replace dealership placeholders with real PAL Jay details for production.
+# ─────────────────────────────────────────────────────────────
+
+dealership:
+  name: "PAL Jay"
+  tagline: "Your trusted dealership"
+  branches:
+    - name: "PAL Jay Jammu"
+      address: "NH-44, Narwal Bye Pass Road, near Sunjwan Army Gate, Jammu, Jammu and Kashmir 180019"
+      phone: "+91 60068 00800"
+      network: "PAL Jay Automobiles, Luthra Group"
+    - name: "PAL Jay Srinagar"
+      address: "Near DPS School, Athwajan, Pantha Chowk, Srinagar, Jammu and Kashmir 191101"
+      phone: "+91 95419 34703"
+      network: "PAL Jay Automobiles, Luthra Group"
+    - name: "Nearest Delhi-NCR outlet to Sector 56 and Cyber City"
+      address: "DAP, Ground Floor, Picasso Centre, Baharampur Naya, Sector 61, Gurugram, Haryana 122011"
+      phone: "+91 88001 85551"
+      network: "Not a PAL Jay branch. PAL Jay's published workshops are in Jammu and Kashmir. Sector 61 is the authorized showroom nearest Sector 56 and Cyber City."
+  sales_hours: "Monday to Saturday, 9:00 AM to 7:00 PM"
+  service_hours: "Monday to Saturday, 9:00 AM to 6:00 PM"
+  closed_note: "Closed on Sundays and public holidays"
+
+greeting: "Thank you for calling PAL Jay. This is Consilium, the dealership virtual assistant. How may I help you today?"
+
+models:
+  - name: "Seltos"
+    body_type: "Compact SUV"
+    seating: 5
+    fuel: ["Petrol", "Diesel", "Turbo-Petrol"]
+    transmission: ["Manual", "Automatic (IVT)", "DCT"]
+    usps: ["Premium dual-screen interiors", "Panoramic sunroof", "ADAS Level 2 safety"]
+    best_for: "City driving and small families who want a feature-rich SUV"
+
+  - name: "Sonet"
+    body_type: "Subcompact SUV"
+    seating: 5
+    fuel: ["Petrol", "Diesel", "Turbo-Petrol"]
+    transmission: ["Manual", "iMT", "Automatic (IVT)", "DCT"]
+    usps: ["Compact and easy to park", "Connected car features", "Ventilated seats"]
+    best_for: "First-time SUV buyers and urban commuting"
+
+  - name: "Carens"
+    body_type: "MPV"
+    seating: "6 or 7"
+    fuel: ["Petrol", "Diesel"]
+    transmission: ["Manual", "Automatic (IVT)", "DCT"]
+    usps: ["Flexible 6 or 7 seat layout", "Roomy second and third row", "Good for larger families"]
+    best_for: "Families needing extra seats and space"
+
+  - name: "Syros"
+    body_type: "Compact SUV"
+    seating: 5
+    fuel: ["Petrol", "Turbo-Petrol"]
+    transmission: ["Manual", "DCT"]
+    usps: ["Modern design", "Premium cabin", "Advanced connected features"]
+    best_for: "Style-conscious buyers wanting a fresh, tech-forward SUV"
+
+  - name: "EV6"
+    body_type: "Electric Crossover"
+    seating: 5
+    fuel: ["Electric"]
+    transmission: ["Single-speed"]
+    usps: ["Long electric range", "Ultra-fast charging", "Premium electric performance"]
+    best_for: "Buyers looking for a premium electric vehicle"
+
+  - name: "Seltos HTX"
+    body_type: "Compact SUV"
+    seating: 5
+    fuel: ["Petrol", "Diesel"]
+    transmission: ["Manual", "Automatic"]
+    usps: ["HTX trim of the Seltos", "Sunroof and connected cabin on this grade", "Five seats"]
+    best_for: "Owners who already drive a Seltos HTX, and buyers comparing that grade"
+
+  - name: "EV6 GT"
+    body_type: "Electric Crossover"
+    seating: 5
+    fuel: ["Electric"]
+    transmission: ["Single-speed dual motor"]
+    usps: ["Performance version of the EV6", "Dual-motor layout", "Confirm a test-drive car with the showroom before promising a slot"]
+    best_for: "Callers who ask for the EV6 GT rather than a standard EV6"
+
+  - name: "EV9 GT-Line"
+    body_type: "Electric SUV"
+    seating: "6"
+    fuel: ["Electric"]
+    transmission: ["Single-speed"]
+    usps: ["Flagship electric SUV", "GT-Line grade", "Three-row cabin"]
+    best_for: "Families comparing a large electric SUV, including hot leads asking about the EV9"
+
+policies:
+  - "Never quote exact prices, discounts, or EMI figures."
+  - "Spare-part counts may be spoken only from the parts list. Do not invent any other stock."
+  - "When a customer asks for exact pricing or finance numbers, offer to connect them to the sales team."
+  - "Never invent policies or offers. Only state what is listed in this knowledge base."
+
+service_intervals:
+  - name: "10,000 km or 12 months, whichever comes first"
+    jobs:
+      - "Engine oil and oil filter"
+      - "Multi-point inspection"
+      - "Wheel alignment and balancing check"
+  - name: "20,000 km or 24 months, whichever comes first"
+    jobs:
+      - "Engine oil and oil filter"
+      - "Engine air filter replacement"
+      - "Air-conditioning filter cleaning"
+
+parts:
+  - name: "Seltos HTX door visor set"
+    fitment: "Seltos HTX"
+    jammu: "4 sets at PAL Jay Jammu"
+    srinagar: "2 sets at PAL Jay Srinagar"
+    delhi_ncr: "Not stocked as PAL Jay stock. Ask DAP, Sector 61, to check the counter."
+  - name: "EV6 GT headlamp"
+    fitment: "EV6 GT"
+    jammu: "None on the shelf. Order from the regional hub."
+    srinagar: "1 assembly at PAL Jay Srinagar"
+    delhi_ncr: "Not stocked as PAL Jay stock. Ask DAP, Sector 61, to check the counter."
+  - name: "Seltos front brake pads"
+    fitment: "Seltos"
+    jammu: "6 sets at PAL Jay Jammu"
+    srinagar: "3 sets at PAL Jay Srinagar"
+    delhi_ncr: "Not stocked as PAL Jay stock. Ask DAP, Sector 61, to check the counter."
+
+processes:
+  test_drive:
+    - "The customer can take a test drive at the showroom or request an at-home test drive."
+    - "A valid driving licence is required at the time of the test drive."
+    - "The sales team confirms the final date and time slot."
+  service:
+    - "Service appointments cover periodic maintenance, repairs, and general checkups."
+    - "Collect the vehicle model, registration number, service requirement, and preferred time."
+  exchange:
+    - "For an exchange, collect the vehicle make, model, year, variant, kilometres driven, and condition."
+    - "The exchange valuation is given by the sales team after inspecting the vehicle."
+  finance:
+    - "Finance options are available through partner banks."
+    - "EMI and interest rates depend on the customer's profile and are confirmed by the sales team."

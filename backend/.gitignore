@@ -1,0 +1,8 @@
+.env
+.DS_Store
+*.db
+consilium_voice_agent.db
+__pycache__/
+*.pyc
+.venv/
+venv/

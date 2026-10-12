@@ -1,0 +1,20 @@
+.env
+.env.local
+*.env
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+.next/
+*.db
+*.sqlite
+*.sqlite3
+dist/
+.turbo/
+.python-cache/
+# Windows kept these locked during the Consilium rename. Source of truth is crm/, live-dashboard/, notifications/.
+KiaDemoCRM/
+KiaDemoDashboard/
+KiaNotificationService/

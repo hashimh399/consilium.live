@@ -1,0 +1,25 @@
+[project]
+name = "consilium-voice-agent-backend"
+version = "0.1.0"
+description = "Consilium dealership AI voice agent backend"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "twilio>=9.3.0",
+    "groq>=0.13.0",
+    "sqlalchemy>=2.0.36",
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.6.0",
+    "pyyaml>=6.0.2",
+    "httpx>=0.27.0",
+    "websockets>=14.0",
+    "python-multipart>=0.0.9",
+    "edge-tts>=7.2.8",
+    "miniaudio>=1.71",
+    "audioop-lts>=0.2.2",
+    "redis>=5.2.0",
+]
+
+[tool.uv]
+package = false
